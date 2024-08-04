@@ -1,6 +1,7 @@
 <h2 align="center">⚡️ Alias</h2>
 
-This script adds useful aliases to your `.zshrc` file. It covers common commands for `git`, `npm`, `pnpm`, `vite`, `docker`, and `docker-compose`, making your terminal experience more efficient.
+<p align="center">Add useful aliases to your `.zshrc` file. It covers common commands for `git`, `npm`, `pnpm`, `vite`, `docker`, and `docker-compose`, making your terminal experience more efficient.
+</p>
 
 ## Installation
 
@@ -18,113 +19,126 @@ This command will download and execute the script, automatically adding the alia
 
 ### File System
 
-- **`ll`**: `ls -lah` - Lists all files in the current directory with detailed information.
+```sh
+alias ll="ls -lah"                               # List all files in long format
+```
 
 ### Git
 
-- **`gs`**: `git status` - Shows the status of the current Git repository.
-- **`ga`**: `git add` - Adds files to the staging area.
-- **`gc`**: `git commit -m` - Commits changes with a message.
-- **`gp`**: `git push` - Pushes commits to the remote repository.
-- **`gpl`**: `git pull` - Pulls the latest changes from the remote repository.
-- **`gf`**: `git fetch` - Fetches updates from the remote repository.
-- **`gl`**: `git log --oneline --graph --decorate` - Displays a compact and graphical view of the Git commit history.
+```sh
+alias gs="git status"                            # Quick git status
+alias ga="git add"                               # Quick git add
+alias gc="git commit -m"                         # Quick git commit with a message
+alias gp="git push"                              # Quick git push
+alias gpl="git pull"                             # Quick git pull
+alias gf="git fetch"                             # Quick git fetch
+alias gl="git log --oneline --graph --decorate"  # Pretty git log
+```
 
 ### NPM
 
-- **`nl`**: `npm list --depth=0` - Lists installed npm packages at the top level.
-- **`nf`**: `npm fund` - Displays funding information for npm packages.
-- **`ni`**: `npm install` - Installs npm packages.
-- **`nr`**: `npm run` - Runs npm scripts.
-- **`ns`**: `npm start` - Starts the npm application.
-- **`nb`**: `npm build` - Builds the npm application.
-- **`nt`**: `npm test` - Runs npm tests.
-- **`nc`**: `npm clean` - Cleans npm cache.
+```sh
+alias nl="npm list --depth=0"                    # List installed npm packages at the top level
+alias nf="npm fund"                              # Display funding information for npm packages
+alias ni="npm install"                           # Install npm packages
+alias nr="npm run"                               # Run npm scripts
+alias ns="npm start"                             # Start the npm application
+alias nb="npm build"                             # Build the npm application
+alias nt="npm test"                              # Run npm tests
+alias nc="npm clean"                             # Clean npm cache
+```
 
 ### PNPM
 
-- **`pi`**: `pnpm install` - Installs pnpm packages.
-- **`pr`**: `pnpm run` - Runs pnpm scripts.
-- **`ps`**: `pnpm start` - Starts the pnpm application.
-- **`pb`**: `pnpm build` - Builds the pnpm application.
-- **`pt`**: `pnpm test` - Runs pnpm tests.
-- **`pc`**: `pnpm clean` - Cleans pnpm cache.
-- **`prs`**: `pnpm run start` - Starts the pnpm development server.
-- **`prb`**: `pnpm run build` - Builds the pnpm project.
-- **`prt`**: `pnpm run test` - Runs pnpm tests.
-- **`prtw`**: `pnpm run test:watch` - Runs pnpm tests in watch mode.
-- **`prc`**: `pnpm run clean` - Cleans pnpm build outputs.
-- **`prl`**: `pnpm run lint` - Runs pnpm linting.
-- **`prlf`**: `pnpm run lint --fix` - Runs pnpm linting and auto-fixes issues.
-- **`prp`**: `pnpm run prettier --write` - Formats code with Prettier.
+```sh
+alias pi="pnpm install"                          # Install pnpm packages
+alias pr="pnpm run"                              # Run pnpm scripts
+alias ps="pnpm start"                            # Start the pnpm application
+alias pb="pnpm build"                            # Build the pnpm application
+alias pt="pnpm test"                             # Run pnpm tests
+alias pc="pnpm clean"                            # Clean pnpm cache
+alias prs="pnpm run start"                       # Start the pnpm development server
+alias prb="pnpm run build"                       # Build the pnpm project
+alias prt="pnpm run test"                        # Run pnpm tests
+alias prtw="pnpm run test:watch"                 # Run pnpm tests in watch mode
+alias prc="pnpm run clean"                       # Clean pnpm build outputs
+alias prl="pnpm run lint"                        # Run pnpm linting
+alias prlf="pnpm run lint --fix"                 # Run pnpm linting and auto-fix issues
+alias prp="pnpm run prettier --write"            # Format code with Prettier
+```
 
 ### Zsh
 
-- **`src`**: `source ~/.zshrc` - Reloads the zsh configuration.
-- **`code`**: `code .` - Opens the current directory in Visual Studio Code.
-- **`cls`**: `clear` - Clears the terminal screen.
+```sh
+alias src="source ~/.zshrc"                      # Reload zsh configuration
+alias code="code ."                              # Open VS Code in current directory
+alias cls="clear"                                # Clear the terminal
+```
 
 ### Vite
 
-- **`create-vue`**: `pnpm create vite $1 --template vue` - Creates a Vite project with Vue.
-- **`create-vue-ts`**: `pnpm create vite $1 --template vue-ts` - Creates a Vite project with Vue and TypeScript.
-- **`create-react`**: `pnpm create vite $1 --template react` - Creates a Vite project with React.
-- **`create-react-ts`**: `pnpm create vite $1 --template react-ts` - Creates a Vite project with React and TypeScript.
-- **`create-preact`**: `pnpm create vite $1 --template preact` - Creates a Vite project with Preact.
-- **`create-preact-ts`**: `pnpm create vite $1 --template preact-ts` - Creates a Vite project with Preact and TypeScript.
-- **`create-lit`**: `pnpm create vite $1 --template lit` - Creates a Vite project with Lit.
-- **`create-svelte`**: `pnpm create vite $1 --template svelte` - Creates a Vite project with Svelte.
-- **`create-svelte-ts`**: `pnpm create vite $1 --template svelte-ts` - Creates a Vite project with Svelte and TypeScript.
-- **`create-vanilla`**: `pnpm create vite $1 --template vanilla` - Creates a Vite project with Vanilla JavaScript.
-- **`create-vanilla-ts`**: `pnpm create vite $1 --template vanilla-ts` - Creates a Vite project with Vanilla JavaScript and TypeScript.
+```sh
+alias create-vue="pnpm create vite \$1 --template vue"         # Create a Vite project with Vue
+alias create-vue-ts="pnpm create vite \$1 --template vue-ts"   # Create a Vite project with Vue and TypeScript
+alias create-react="pnpm create vite \$1 --template react"     # Create a Vite project with React
+alias create-react-ts="pnpm create vite \$1 --template react-ts" # Create a Vite project with React and TypeScript
+alias create-preact="pnpm create vite \$1 --template preact"   # Create a Vite project with Preact
+alias create-preact-ts="pnpm create vite \$1 --template preact-ts" # Create a Vite project with Preact and TypeScript
+alias create-lit="pnpm create vite \$1 --template lit"         # Create a Vite project with Lit
+alias create-svelte="pnpm create vite \$1 --template svelte"   # Create a Vite project with Svelte
+alias create-svelte-ts="pnpm create vite \$1 --template svelte-ts" # Create a Vite project with Svelte and TypeScript
+alias create-vanilla="pnpm create vite \$1 --template vanilla" # Create a Vite project with Vanilla JavaScript
+alias create-vanilla-ts="pnpm create vite \$1 --template vanilla-ts" # Create a Vite project with Vanilla JavaScript and TypeScript
+```
 
 ### Docker
 
-- **`dbuild`**: `docker build .` - Builds a Docker image from the Dockerfile in the current directory.
-- **`dps`**: `docker ps` - Lists running Docker containers.
-- **`dpsa`**: `docker ps -a` - Lists all Docker containers, including stopped ones.
-- **`di`**: `docker images` - Lists all Docker images.
-- **`drm`**: `docker rm` - Removes a Docker container.
-- **`drmi`**: `docker rmi` - Removes a Docker image.
-- **`dstop`**: `docker stop` - Stops a running Docker container.
-- **`dstart`**: `docker start` - Starts a stopped Docker container.
-- **`drestart`**: `docker restart` - Restarts a running Docker container.
-- **`dlogs`**: `docker logs` - Shows logs of a Docker container.
-- **`dexec`**: `docker exec -it` - Executes a command in a running Docker container.
-- **`dinspect`**: `docker inspect` - Displays detailed information about a Docker container or image.
-- **`dbuild-nc`**: `docker build --no-cache .` - Builds a Docker image without using cache.
-- **`dbuild-t`**: `docker build -t` - Builds a Docker image and tags it.
-- **`dbuildf`**: `docker build -f` - Builds a Docker image using a specific Dockerfile.
-- **`dnet`**: `docker network ls` - Lists Docker networks.
-- **`dclean`**: `docker system prune -af` - Cleans up unused Docker data, including containers, images, networks, and volumes.
-- **`dimages-clean`**: `docker image prune -af` - Removes all dangling and unused Docker images.
-- **`dvols`**: `docker volume ls` - Lists Docker volumes.
-- **`dvols-clean`**: `docker volume prune -f` - Removes all unused Docker volumes.
-- **`dnet-clean`**: `docker network prune -f` - Removes all unused Docker networks.
-- **`drun`**: `docker run -it` - Runs a Docker container interactively.
-- **`drun-d`**: `docker run -d` - Runs a Docker container in detached mode.
-- **`drun-p`**: `docker run -p` - Runs a Docker container with port mapping.
-- **`drun-v`**: `docker run -v` - Runs a Docker container with volume mapping.
-- **`drun-rm`**: `docker run --rm` - Runs a Docker container and removes it after it exits.
-- **`drun-env`**: `docker run --env-file` - Runs a Docker container with environment variables from a file.
-- **`drun-name`**: `docker run --name` - Runs a Docker container with a specified name.
-- **`drun-net`**: `docker run --network` - Runs a Docker container connected to a specific network.
+```sh
+alias dbuild="docker build ."                      # Build a Docker image from the Dockerfile in the current directory
+alias dps="docker ps"                              # List running Docker containers
+alias dpsa="docker ps -a"                          # List all Docker containers, including stopped ones
+alias di="docker images"                           # List all Docker images
+alias drm="docker rm"                              # Remove a Docker container
+alias drmi="docker rmi"                            # Remove a Docker image
+alias dstop="docker stop"                          # Stop a running Docker container
+alias dstart="docker start"                        # Start a stopped Docker container
+alias drestart="docker restart"                    # Restart a running Docker container
+alias dlogs="docker logs"                          # Show logs of a Docker container
+alias dexec="docker exec -it"                      # Execute a command in a running Docker container
+alias dinspect="docker inspect"                    # Display detailed information about a Docker container or image
+alias dbuild-nc="docker build --no-cache ."        # Build a Docker image without using cache
+alias dbuild-t="docker build -t"                   # Build a Docker image and tag it
+alias dbuildf="docker build -f"                    # Build a Docker image using a specific Dockerfile
+alias dnet="docker network ls"                     # List Docker networks
+alias dclean="docker system prune -af"             # Clean up unused Docker data
+alias dimages-clean="docker image prune -af"       # Remove all dangling and unused Docker images
+alias dvols="docker volume ls"                     # List Docker volumes
+alias dvols-clean="docker volume prune -f"         # Remove all unused Docker volumes
+alias dnet-clean="docker network prune -f"         # Remove all unused Docker networks
+alias drun="docker run -it"                        # Run a Docker container interactively
+alias drun-d="docker run -d"                       # Run a Docker container in detached mode
+alias drun-p="docker run -p"                       # Run a Docker container with port mapping
+alias drun-v="docker run -v"                       # Run a Docker container with volume mapping
+alias drun-rm="docker run --rm"                    # Run a Docker container and remove it after it exits
+alias drun-env="docker run --env-file"             # Run a Docker container with environment variables from a file
+alias drun-name="docker run --name"                # Run a Docker container with a specified name
+alias drun-net="docker run --network"              # Run a Docker container connected to a specific network
+```
 
 ### Docker Compose
 
-- **`dcu`**: `docker-compose up` - Starts Docker containers using Docker Compose.
-- **`dcub`**: `docker-compose up --build` - Builds and starts Docker containers using Docker Compose.
-- **`dcd`**: `docker-compose down` - Stops and removes Docker Compose containers, networks, images, and volumes.
-- **`dcb`**: `docker-compose build` - Builds Docker Compose services.
-- **`dcr`**: `docker-compose run` - Runs a one-off command against a
-
-service defined in Docker Compose.
-
-- **`dcl`**: `docker-compose logs` - Displays logs from Docker Compose services.
-- **`dclf`**: `docker-compose logs -f` - Follows logs from Docker Compose services.
-- **`dce`**: `docker-compose exec` - Executes a command in a running Docker Compose service container.
-- **`dcp`**: `docker-compose pull` - Pulls Docker Compose service images.
-- **`dcrm`**: `docker-compose rm` - Removes stopped Docker Compose service containers.
+```sh
+alias dcu="docker-compose up"                      # Start Docker containers using Docker Compose
+alias dcub="docker-compose up --build"             # Build and start Docker containers using Docker Compose
+alias dcd="docker-compose down"                    # Stop and remove Docker Compose containers, networks, images, and volumes
+alias dcb="docker-compose build"                   # Build Docker Compose services
+alias dcr="docker-compose run"                     # Run a one-off command against a service defined in Docker Compose
+alias dcl="docker-compose logs"                    # Display logs from Docker Compose services
+alias dclf="docker-compose logs -f"                # Follow logs from Docker Compose services
+alias dce="docker-compose exec"                    # Execute a command in a running Docker Compose service container
+alias dcp="docker-compose pull"                    # Pull Docker Compose service images
+alias dcrm="docker-compose rm"                     # Remove stopped Docker Compose service containers
+```
 
 ## Uninstallation
 
@@ -138,7 +152,3 @@ source ~/.zshrc
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-This `README.md` provides a complete overview of the aliases included in your script, along with easy installation instructions. Ensure that you host your `install-aliases.sh` script at a reliable URL, such as on GitHub, to make the installation process seamless.
