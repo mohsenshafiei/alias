@@ -1,6 +1,7 @@
 <h2 align="center">⚡️ Alias</h2>
 
-<p align="center">Add useful aliases to your `.zshrc` file. It covers common commands for `git`, `npm`, `pnpm`, `vite`, `docker`, and `docker-compose`, making your terminal experience more efficient.
+<p align="center">
+    Enhance your <code>.zshrc</code> file with useful aliases for common commands like <code>git</code>, <code>npm</code>, <code>pnpm</code>, <code>vite</code>, <code>docker</code>, and <code>docker-compose</code>. Streamline your terminal experience and boost efficiency.
 </p>
 
 ## Installation
