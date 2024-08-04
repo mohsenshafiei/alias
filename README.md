@@ -1,6 +1,6 @@
-# Frontend Development & Docker Aliases Installation Script
+<h2 align="center">⚡️ Alias</h2>
 
-This script adds useful aliases for frontend development and Docker management to your `.zshrc` file. It covers common commands for Git, npm, pnpm, Vite, Docker, and Docker Compose, making your terminal experience more efficient.
+This script adds useful aliases to your `.zshrc` file. It covers common commands for `git`, `npm`, `pnpm`, `vite`, `docker`, and `docker-compose`, making your terminal experience more efficient.
 
 ## Installation
 
